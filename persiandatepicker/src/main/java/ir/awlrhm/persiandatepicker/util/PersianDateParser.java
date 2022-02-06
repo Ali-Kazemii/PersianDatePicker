@@ -21,22 +21,9 @@ package ir.awlrhm.persiandatepicker.util;
 /**
  * Parses text from the beginning of the given string to produce a
  * PersianCalendar.
- * 
- * <p>
- * See the {@link #getPersianDate()} method for more information on date
- * parsing.
- * 
- * <pre>
- *                Example
- *                     
- *  {@code
- *    PersianCalendar pCal =
- *     new PersianDateParser("1361/3/1").getPersianDate();             
- *  }
- * </pre>
- * 
- * @author Morteza contact: <a
- *         href="mailto:Mortezaadi@gmail.com">Mortezaadi@gmail.com</a>
+ *
+ * @author Ali contact: <a
+ *        href="mailto:Alikazemi.developer@gmail.com">Alikazemi.developer@gmail.com</a>
  * @version 1.0
  */
 public class PersianDateParser {
@@ -44,24 +31,6 @@ public class PersianDateParser {
 	private String dateString;
 	private String delimiter = "/";
 
-	/**
-	 * <pre>
-	 * construct parser with date string assigned
-	 * the default delimiter is '/'.
-	 * 
-	 * To assign deferment delimiter use:
-	 * {@link #PersianDateParser(String dateString, String delimiter)}
-	 * 
-	 *                     Example
-	 *                     
-	 *  {@code
-	 *    PersianCalendar pCal =
-	 *     new PersianDateParser("1361/3/1").getPersianDate();             
-	 *  }
-	 * </pre>
-	 * 
-	 * @param dateString
-	 */
 	public PersianDateParser(String dateString) {
 		this.dateString = dateString;
 	}

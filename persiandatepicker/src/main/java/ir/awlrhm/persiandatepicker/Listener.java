@@ -3,7 +3,7 @@ package ir.awlrhm.persiandatepicker;
 import ir.awlrhm.persiandatepicker.util.PersianCalendar;
 
 /**
- * Created by aliabdolahi on 1/23/17.
+ * Created by Ali_Kazemi on 01/18/2019.
  */
 
 @Deprecated

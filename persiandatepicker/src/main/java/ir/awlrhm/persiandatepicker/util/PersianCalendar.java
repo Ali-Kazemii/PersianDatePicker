@@ -109,7 +109,8 @@ import java.util.TimeZone;
  * }
  *
  * <pre>
- * @author Morteza  contact: <a href="mailto:Mortezaadi@gmail.com">Mortezaadi@gmail.com</a>
+ * @author Ali contact: <a
+ *  *       href="mailto:Alikazemi.developer@gmail.com">Alikazemi.developer@gmail.com</a>
  * @version 1.1
  */
 @Deprecated

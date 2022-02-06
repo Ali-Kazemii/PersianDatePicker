@@ -29,7 +29,7 @@ import ir.awlrhm.persiandatepicker.util.PersianHelper;
 import ir.hamsaa.persiandatepicker.R;
 
 /**
- * Created by aliabdolahi on 1/23/17.
+ * Created by Ali_Kazemi on 01/18/2019.
  */
 
 public class PersianDatePickerDialog {

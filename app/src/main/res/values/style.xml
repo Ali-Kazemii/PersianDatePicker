@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PersianDatePickerTheme">
+        <item name="fontFamily">@font/iran_sans_fa_num</item>
+        <item name="android:fontFamily">@font/iran_sans_fa_num</item>
+    </style>
+</resources>

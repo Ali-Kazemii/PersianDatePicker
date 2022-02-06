@@ -1,7 +1,7 @@
 package ir.awlrhm.persiandatepicker.util;
 
 /**
- * Created by sajjad on 01/18/2016.
+ * Created by Ali_Kazemi on 01/18/2019.
  */
 public class PersianHelper {
     private static char[] persianNumbers = new char[]{'۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'};

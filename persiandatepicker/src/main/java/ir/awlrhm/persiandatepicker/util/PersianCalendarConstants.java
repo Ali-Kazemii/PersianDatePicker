@@ -19,9 +19,9 @@
 package ir.awlrhm.persiandatepicker.util;
 
 /**
- * 
- * @author Morteza contact: <a
- *         href="mailto:Mortezaadi@gmail.com">Mortezaadi@gmail.com</a>
+ *
+ * @author Ali contact: <a
+ *         href="mailto:Alikazemi.developer@gmail.com">Alikazemi.developer@gmail.com</a>
  * @version 1.0
  */
 public class PersianCalendarConstants {
