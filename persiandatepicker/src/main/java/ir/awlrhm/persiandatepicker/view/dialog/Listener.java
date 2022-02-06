@@ -1,10 +1,6 @@
-package ir.awlrhm.persiandatepicker;
+package ir.awlrhm.persiandatepicker.view.dialog;
 
 import ir.awlrhm.persiandatepicker.util.PersianCalendar;
-
-/**
- * Created by Ali_Kazemi on 01/18/2019.
- */
 
 @Deprecated
 public interface Listener {

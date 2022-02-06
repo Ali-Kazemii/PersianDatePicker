@@ -1,4 +1,4 @@
-package ir.awlrhm.persiandatepicker;
+package ir.awlrhm.persiandatepicker.view.dialog;
 
 import android.content.Context;
 import android.graphics.Color;
@@ -21,6 +21,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import java.util.Date;
 
+import ir.awlrhm.persiandatepicker.PersianDatePicker;
 import ir.awlrhm.persiandatepicker.api.PersianPickerDate;
 import ir.awlrhm.persiandatepicker.api.PersianPickerListener;
 import ir.awlrhm.persiandatepicker.date.PersianDateImpl;
@@ -66,6 +67,8 @@ public class PersianDatePickerDialog {
     private int pickerBackgroundDrawable;
     private int titleType = 0;
     private boolean showInBottomSheet;
+    private int dividerColor = 0;
+
 
 
     public PersianDatePickerDialog(Context context) {
@@ -259,6 +262,11 @@ public class PersianDatePickerDialog {
         return this;
     }
 
+    public PersianDatePickerDialog setDividerColor(int color) {
+        this.dividerColor = color;
+        return this;
+    }
+
     public void show() {
 
         View v = View.inflate(context, R.layout.dialog_picker, null);
@@ -328,6 +336,10 @@ public class PersianDatePickerDialog {
             datePickerView.setTypeFace(typeFace);
         }
 
+        if(dividerColor != 0){
+            datePickerView.setDividerColor(dividerColor);
+        }
+
         positiveButton.setTextSize(actionTextSize);
         negativeButton.setTextSize(negativeTextSize);
         todayButton.setTextSize(todayTextSize);
@@ -346,12 +358,8 @@ public class PersianDatePickerDialog {
 
         updateView(dateText, datePickerView.getPersianDate());
 
-        datePickerView.setOnDateChangedListener(new PersianDatePicker.OnDateChangedListener() {
-            @Override
-            public void onDateChanged(int newYear, int newMonth, int newDay) {
-                updateView(dateText, datePickerView.getPersianDate());
-            }
-        });
+        datePickerView.setOnDateChangedListener((newYear, newMonth, newDay) ->
+                updateView(dateText, datePickerView.getPersianDate()));
 
 
         final AppCompatDialog dialog;

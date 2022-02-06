@@ -7,10 +7,17 @@
     tools:context=".MainActivity">
 
     <ir.awlrhm.persiandatepicker.PersianDatePicker
-        android:id="@+id/datePicker"
+        android:id="@+id/ggDatePicker"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
         android:theme="@style/PersianDatePickerTheme"
         app:displayMonthNames="true" />
 
+    <Button
+        android:id="@+id/btnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Date"
+        app:layout_constraintTop_toBottomOf="@id/ggDatePicker"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -19,6 +19,7 @@
         android:textSize="16sp"
         tools:text="سه شنبه" />
 
+
     <ir.awlrhm.persiandatepicker.PersianDatePicker
         android:id="@+id/datePicker"
         android:layout_width="match_parent"
