@@ -1,15 +1,15 @@
 package com.example.persiandatepicker
 
 import android.graphics.Color
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import ir.awlrhm.persiandatepicker.PersianDatePicker
+import ir.awlrhm.persiandatepicker.util.PersianCalendar
+import ir.awlrhm.persiandatepicker.util.convertGregorianToPersianDate
 import ir.awlrhm.persiandatepicker.view.dialog.Listener
 import ir.awlrhm.persiandatepicker.view.dialog.PersianDatePickerDialog
-import ir.awlrhm.persiandatepicker.util.PersianCalendar
-import ir.awlrhm.persiandatepicker.util.convertPersianDateToGeo
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,11 +26,11 @@ class MainActivity : AppCompatActivity() {
         })
 
         findViewById<Button>(R.id.btnDate).setOnClickListener {
-            val persianCalendar = datePicker.getPersianDate()
+            /*val persianCalendar = datePicker.getPersianDate()
             val chosenDate = persianCalendar?.persianYear
-                .toString() + "/" + persianCalendar?.persianMonth + "/" + persianCalendar?.persianDay
+                .toString() + "/" + persianCalendar?.persianMonth + "/" + persianCalendar?.persianDay*/
 
-            Toast.makeText(this@MainActivity, convertPersianDateToGeo(chosenDate), Toast.LENGTH_LONG).show()
+            Toast.makeText(this@MainActivity, convertGregorianToPersianDate("2022-02-28"), Toast.LENGTH_LONG).show()
 //            initDatePicker()
         }
 
